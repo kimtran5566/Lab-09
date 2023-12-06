@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="jsonData" href="./data.json"/>
+  <title>Slide Show</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Direct JSON Data</title>
+    </head>
+    <body>
+    
+        <div class="slider-container">
+            <!-- Slide items will be appended here -->
+          </div>
+        
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const sliderContainer = document.querySelector(".slider-container");
+        
+              // Dữ liệu JSON được nhúng trực tiếp vào mã JavaScript
+              const data = [
+                { name: "Element 1", img: "cat.jpg", url: "https://example.com/1" },
+                { name: "Element 2", img: "corgi.jpg", url: "https://example.com/2" },
+                { name: "Element 3", img: "corgi2.jpg", url: "https://example.com/3" }
+              ];
+        
+              // Đường dẫn đến thư mục chứa hình ảnh
+              const imagePath = "./img/";
+        
+              // Append các slide vào container
+              data.forEach(item => {
+                const imageUrl = imagePath + item.img;
+                sliderContainer.innerHTML += `<div><h3>${item.name}</h3><img src="${imageUrl}" alt="${item.name}"><a href="${item.url}" target="_blank">Chi tiết</a></div>`;
+              });
+        
+              // Khởi tạo Slick Carousel
+              initCarousel();
+            });
+        
+            function initCarousel() {
+              // Khởi tạo Slick Carousel
+              $(".slider-container").slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              });
+            }
+          </script>
+        
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
+        </body>
+        </html>

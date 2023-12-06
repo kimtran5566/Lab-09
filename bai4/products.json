@@ -1,0 +1,52 @@
+[
+    {
+    "product_name": "pants 1",
+    "product_image" : "./img/pants1.jpg",
+    "product_price" : 1
+},
+{
+    "product_name": "pants 2",
+    "product_image" : "./img/pants2.jpg",
+    "product_price" : 2
+},
+{
+    "product_name": "pants 3",
+    "product_image" : "./img/pants3.jpg",
+    "product_price" : 3
+},
+{
+    "product_name": "pants 4",
+    "product_image" : "./img/pants4.jpg",
+    "product_price" : 4
+},
+{
+    "product_name": "pants 5",
+    "product_image" : "./img/pants5.jpg",
+    "product_price" : 5
+},
+{
+    "product_name": "pants 6",
+    "product_image" : "./img/pants6.jpg",
+    "product_price" : 6
+},
+{
+    "product_name": "pants 7",
+    "product_image" : "./img/pants7.jpg",
+    "product_price" : 7
+},
+{
+    "product_name": "pants 8",
+    "product_image" : "./img/pants8.jpg",
+    "product_price" : 8
+},
+{
+    "product_name": "pants 9",
+    "product_image" : "./img/pants9.jpg",
+    "product_price" : 9
+},
+{
+    "product_name": "pants 10",
+    "product_image" : "./img/pants10.jpg",
+    "product_price" : 10
+}
+]
